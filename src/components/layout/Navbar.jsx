@@ -1,5 +1,5 @@
 import { FaGithub } from 'react-icons/fa';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Navbar({ appName }) {
   return (
@@ -13,20 +13,18 @@ function Navbar({ appName }) {
         </div>
         <div className='flex-1 px-2'>
           <div className='flex justify-end'>
-            <NavLink
+            <Link
               to='/'
-              activeClassName='btn-active'
               className='px-2 mx-2 btn btn-ghost no-animation hover:font-extrabold focus:font-extrabold focus:text-primary '
             >
               Home
-            </NavLink>
-            <NavLink
+            </Link>
+            <Link
               to='/about'
-              activeClassName='btn-active'
               className='px-2 mx-2 btn btn-ghost no-animation hover:font-extrabold focus:font-extrabold focus:text-primary'
             >
               About
-            </NavLink>
+            </Link>
           </div>
         </div>
       </div>
