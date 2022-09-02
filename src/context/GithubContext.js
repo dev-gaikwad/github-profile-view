@@ -3,7 +3,6 @@ import githubReducer from './GithubReducer';
 
 const GithubContext = createContext();
 
-const github_users_url = 'https://api.github.com/users';
 const github_search_url = 'https://api.github.com/search/users?q=';
 
 export const GithubProvider = ({ children }) => {
